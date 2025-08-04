@@ -44,7 +44,7 @@ def generate_launch_description():
 
     gps_tf = Node(package = "tf2_ros", 
                executable = "static_transform_publisher",
-               arguments = ["0.15", "0.0", "1.25", "0.0", "0.0", "0.0", "odom", "gps"])
+               arguments = ["0.15", "0.0", "1.25", "0.0", "0.0", "0.0", "base_link", "gps"])
 
     ld.add_action(rubyplus_tf)
     ld.add_action(helios_left_tf)
