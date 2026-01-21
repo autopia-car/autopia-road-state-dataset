@@ -8,7 +8,7 @@ def generate_launch_description():
 
     camera_front_tf = Node(package = "tf2_ros", 
                        executable = "static_transform_publisher",
-                       arguments = ["0.161445", "0.0174674", "-0.257808", "0.018211", "0.145767", "-0.00378974", "rubyplus", "camera_front"])
+                       arguments = ["0.161445", "0.0174674", "-0.257808", "0.024", " 0.15", "0.01", "rubyplus", "camera_front"]) 
 
     camera_front_left_tf = Node(package = "tf2_ros", 
                        executable = "static_transform_publisher",
