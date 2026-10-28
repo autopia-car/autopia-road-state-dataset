@@ -21,27 +21,27 @@ ARSD/
 
 ## Rosbag topics
 
-| Topic | Message type | Rate | Sensor |
+| Topic | Message type | Rate [HZ]| Sensor |
 |---|---|---|---|
-| `/rubyplus_points` | `sensor_msgs/PointCloud2` | 10 Hz | Robosense Rubyplus 128-ch (rooftop, 360°) |
-| `/helios_left_points` | `sensor_msgs/PointCloud2` | 10 Hz | Robosense Helios 32-ch (left, tilted down) |
-| `/helios_right_points` | `sensor_msgs/PointCloud2` | 10 Hz | Robosense Helios 32-ch (right, tilted down) |
-| `/camera_front/compressed` | `sensor_msgs/CompressedImage` | 10 Hz | Pylon camera — front (1920×1200, JPEG) |
-| `/camera_left/compressed` | `sensor_msgs/CompressedImage` | 10 Hz | Pylon camera — left |
-| `/camera_right/compressed` | `sensor_msgs/CompressedImage` | 10 Hz | Pylon camera — right |
-| `/camera_{front,left,right}/camera_info` | `sensor_msgs/CameraInfo` | 10 Hz | Intrinsics (K, D) |
-| `/imu_left` | `sensor_msgs/Imu` | 85 Hz | WT901C — left wheel (undamped) |
-| `/imu_right` | `sensor_msgs/Imu` | 85 Hz | WT901C — right wheel (undamped) |
-| `/imu_center` | `sensor_msgs/Imu` | 85 Hz | WT901C — rear axle (undamped) |
-| `/imu/data` | `sensor_msgs/Imu` | 48 Hz | Xsens MTi-680G (chassis, damped) |
-| `/imu/angular_velocity` | `geometry_msgs/Vector3Stamped` | 48 Hz | Xsens angular velocity |
-| `/filter/free_acceleration` | `geometry_msgs/Vector3Stamped` | 48 Hz | Xsens free acceleration |
-| `/simpleRTK2B/ublox_gps_node/fix` | `sensor_msgs/NavSatFix` | 10 Hz | ArduSimple RTK base (u-blox) |
-| `/simpleRTK2B/ublox_gps_node/fix_velocity` | `geometry_msgs/TwistWithCovarianceStamped` | 10 Hz | RTK base velocity |
-| `/simpleRTK2BLite/ublox_gps_node/fix` | `sensor_msgs/NavSatFix` | 10 Hz | ArduSimple RTK rover |
-| `/simpleRTK2BLite/ublox_gps_node/fix_velocity` | `geometry_msgs/TwistWithCovarianceStamped` | 10 Hz | RTK rover velocity |
-| `/zoe/localization/global` | `nav_msgs/Odometry` | 48 Hz | Fused localization (UTM) |
-| `/zoe/localization/raw_global` | `nav_msgs/Odometry` | 48 Hz | Raw localization |
+| `/rubyplus_points` | `sensor_msgs/PointCloud2` | 10 | Robosense Rubyplus 128-ch (rooftop, 360°) |
+| `/helios_left_points` | `sensor_msgs/PointCloud2` | 10 | Robosense Helios 32-ch (left, tilted down) |
+| `/helios_right_points` | `sensor_msgs/PointCloud2` | 10  | Robosense Helios 32-ch (right, tilted down) |
+| `/camera_front/compressed` | `sensor_msgs/CompressedImage` | 10 | Pylon camera — front (1920×1200, JPEG) |
+| `/camera_left/compressed` | `sensor_msgs/CompressedImage` | 10 | Pylon camera — left |
+| `/camera_right/compressed` | `sensor_msgs/CompressedImage` | 10 | Pylon camera — right |
+| `/camera_{front,left,right}/camera_info` | `sensor_msgs/CameraInfo` | 10 | Intrinsics (K, D) |
+| `/imu_left` | `sensor_msgs/Imu` | 85 | WT901C — left wheel (undamped) |
+| `/imu_right` | `sensor_msgs/Imu` | 85 | WT901C — right wheel (undamped) |
+| `/imu_center` | `sensor_msgs/Imu` | 85 | WT901C — rear axle (undamped) |
+| `/imu/data` | `sensor_msgs/Imu` | 48 | Xsens MTi-680G (chassis, damped) |
+| `/imu/angular_velocity` | `geometry_msgs/Vector3Stamped` | 48 | Xsens angular velocity |
+| `/filter/free_acceleration` | `geometry_msgs/Vector3Stamped` | 48 | Xsens free acceleration |
+| `/simpleRTK2B/ublox_gps_node/fix` | `sensor_msgs/NavSatFix` | 10 | ArduSimple RTK base (u-blox) |
+| `/simpleRTK2B/ublox_gps_node/fix_velocity` | `geometry_msgs/TwistWithCovarianceStamped` | 10 | RTK base velocity |
+| `/simpleRTK2BLite/ublox_gps_node/fix` | `sensor_msgs/NavSatFix` | 10 | ArduSimple RTK rover |
+| `/simpleRTK2BLite/ublox_gps_node/fix_velocity` | `geometry_msgs/TwistWithCovarianceStamped` | 10 | RTK rover velocity |
+| `/zoe/localization/global` | `nav_msgs/Odometry` | 48 | Fused localization (UTM) |
+| `/zoe/localization/raw_global` | `nav_msgs/Odometry` | 48 | Raw localization |
 
 ### PointCloud2 field layout
 
