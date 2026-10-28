@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "arsd-tools"
+version = "0.1.0"
+description = "Data-loading and visualization tools for the Autopia Road State Dataset (ARSD)"
+readme = "README.md"
+license = {text = "CC-BY-4.0"}
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "mcap>=1.0",
+    "mcap-ros2-support>=0.5",
+    "opencv-python",
+    "scipy",
+]
+
+[project.optional-dependencies]
+vis = ["matplotlib"]
+
+[tool.setuptools.packages.find]
+include = ["arsd_tools*"]
