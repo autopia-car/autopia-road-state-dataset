@@ -156,18 +156,6 @@ ros2 launch autopia_roadstate autopia_roadstate_bringup.launch.py bag_path:=/pat
 
 This plays the rosbag, publishes all static transforms, and opens RViz with a preconfigured layout.
 
-## Citation
-
-If you use this dataset, please cite:
-
-```
-@article{arsd2025,
-  title   = {Autopia Road State Dataset: Autonomous Vehicle Drivable Area Multi-Modal Dataset},
-  author  = {Hortelano, Juan Luis and others},
-  journal = {Scientific Data},
-  year    = {2025}
-}
-```
 
 ## License
 
